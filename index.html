@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <p>calc</p>
+        </header>
+        <form class="calculator" name="calc">
+            <input type="text" class="value screen" name="txt" readonly> 
+            <section class="numbers">
+                <span class="one number" onclick="document.calc.txt.value += '1'">1</span>
+                <span class="two number" onclick="document.calc.txt.value += '2'">2</span>
+                <span class="three number" onclick="document.calc.txt.value += '3'">3</span>
+                <span class="four number" onclick="document.calc.txt.value += '4'">4</span>
+                <span class="five number" onclick="document.calc.txt.value += '5'">5</span>
+                <span class="six number" onclick="document.calc.txt.value += '6'">6</span>
+                <span class="seven number" onclick="document.calc.txt.value += '7'">7</span>
+                <span class="eight number" onclick="document.calc.txt.value += '8'">8</span>
+                <span class="nine number" onclick="document.calc.txt.value += '9'">9</span>
+                <span class="zero number" onclick="document.calc.txt.value += '0'">0</span>
+                <span class="del" onclick="document.calc.txt.value = ''">DEL</span>
+                <span class="sum sinal" onclick="document.calc.txt.value += '+'">+</span>
+                <span class="minus sinal" onclick="document.calc.txt.value += '-'">-</span>
+                <span class="times sinal" onclick="document.calc.txt.value += '*'">x</span>
+                <span class="divided sinal" onclick="document.calc.txt.value += '/'">/</span>
+                <span class="point" onclick="document.calc.txt.value += '.'">.</span>
+                <span class="reset" onclick="document.calc.txt.value = ''">RESET</span>
+                <span class="equals" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+            </section>
+        </form>
+    </section>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

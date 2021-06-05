@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Spartan, normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.container {
+    width: 500px;
+    height: 600px;
+}
+
+section.container > header {
+    width: 100%;
+    padding-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+section.container > form {
+    width: 100%;
+    height: 85%;
+}
+
+section.container > form > input.screen {
+    width: 100%;
+    height: 100px;
+    background-color: hsl(224, 36%, 15%);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 40px;
+    text-align: right;
+    outline: none;
+    cursor: auto;
+    border: none;
+}
+
+section.container > form > section.numbers {
+    width: 100%;
+    height: 80%;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sete oito nove del"
+                         "quatro cinco seis plus"
+                         "um dois tres minus"
+                         "point zer divided time"
+                         "res res equals equals";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+section.container > form > section.numbers > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background-color: #fff;
+    color: hsl(221, 14%, 31%);
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px rgb(139, 139, 139);
+}
+
+section.container > form > section.numbers > span:active {
+    box-shadow: inset 0px 3px rgb(139, 139, 139);
+}
+
+section.container > form > section.numbers > span.del,
+section.container > form > section.numbers > span.reset {
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+}
+
+section.container > form > section.numbers > span.del:active,
+section.container > form > section.numbers > span.reset:active {
+    box-shadow: inset 0px 3px hsl(224, 28%, 35%);
+}
+
+section.container > form > section.numbers > span.equals {
+    background-color: hsl(6, 63%, 50%);
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+}
+
+section.container > form > section.numbers > span.equals:active {
+    box-shadow: inset 0px 3px hsl(6, 70%, 34%);
+}
+
+.one {
+    grid-area: um;
+}
+
+.two {
+    grid-area: dois;
+}
+
+.three {
+    grid-area: tres;
+}
+
+.four {
+    grid-area: quatro;
+}
+
+.five {
+    grid-area: cinco;
+}
+
+.six {
+    grid-area: seis;
+}
+
+.seven {
+    grid-area: sete;
+}
+
+.eight {
+    grid-area: oito;
+}
+
+.nine {
+    grid-area: nove;
+}
+
+.zero {
+    grid-area: zer;
+}
+
+.del {
+    grid-area: del;
+}
+
+.sum {
+    grid-area: plus;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.times {
+    grid-area: time;
+}
+
+.divided {
+    grid-area: divided;
+}
+
+.point {
+    grid-area: point;
+}
+
+.reset {
+    grid-area: res;
+}
+
+.equals {
+    grid-area: equals;
+}
